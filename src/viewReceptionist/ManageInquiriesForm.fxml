@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageInquiresFormContext" prefHeight="771.0" prefWidth="926.0" style="-fx-background-color: white; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerReceptionist.ManageInquiriesFormController">
+   <children>
+      <Label layoutX="327.0" layoutY="10.0" text="Manage Inquires">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="661.0" layoutY="66.0" onAction="#newInquiryOnAction" prefHeight="41.0" prefWidth="195.0" style="-fx-background-color: #574b90; -fx-background-radius: 30;" text="+ New Inquiry" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tblInquiry" layoutX="14.0" layoutY="149.0" prefHeight="601.0" prefWidth="902.0">
+        <columns>
+          <TableColumn fx:id="colInquiryId" prefWidth="75.0" text="Inquiry Id" />
+          <TableColumn fx:id="colDate" prefWidth="92.0" text="Date" />
+            <TableColumn fx:id="colTime" prefWidth="76.0" text="Time" />
+            <TableColumn fx:id="colCustId" prefWidth="78.0" text="Cust Id" />
+            <TableColumn fx:id="colCustName" prefWidth="85.0" text="Cust Name" />
+            <TableColumn fx:id="colAddress" prefWidth="90.0" text="Address" />
+            <TableColumn fx:id="colCroId" prefWidth="75.0" text="CRO Id" />
+            <TableColumn fx:id="colCroCode" prefWidth="82.0" text="CRO Code" />
+            <TableColumn fx:id="colInqFrom" prefWidth="82.0" text="Inq From" />
+            <TableColumn fx:id="colRemarks" prefWidth="74.0" text="Remarks" />
+            <TableColumn fx:id="colStatus" prefWidth="92.0" text="Status" />
+        </columns>
+      </TableView>
+      <Separator layoutX="11.0" layoutY="139.0" prefHeight="3.0" prefWidth="902.0" />
+   </children>
+</AnchorPane>

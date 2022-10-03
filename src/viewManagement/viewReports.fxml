@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="viewReportContext" prefHeight="771.0" prefWidth="926.0" style="-fx-border-color: white;" styleClass="report" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerManagement.ViewReportsController">
+   <children>
+      <Label layoutX="361.0" layoutY="18.0" text="View Reports" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="327.0" layoutY="269.0" onAction="#mostMovableProductView" prefHeight="38.0" prefWidth="285.0" style="-fx-background-color: #c7ecee; -fx-background-radius: 20;" text="Most Movable Product">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="327.0" layoutY="337.0" onAction="#leastMovableProductView" prefHeight="38.0" prefWidth="285.0" style="-fx-background-color: #c7ecee; -fx-background-radius: 20;" text="Least Movable Product">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="824.0" layoutY="27.0" onAction="#cancelButtonOnAction" prefHeight="33.0" prefWidth="39.0" style="-fx-background-color: red; -fx-background-radius: 50;" text="X" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

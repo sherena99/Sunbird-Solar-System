@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="firstFormContext" prefHeight="750.0" prefWidth="1100.0" styleClass="background" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FirstFormController">
+   <children>
+      <Label layoutX="274.0" layoutY="248.0" prefHeight="161.0" prefWidth="590.0" text="Sunbird Solar " textFill="#948247" AnchorPane.rightAnchor="236.0" AnchorPane.topAnchor="248.0">
+         <font>
+            <Font name="Tw Cen MT Bold" size="100.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="managementLogInBtn" buttonType="RAISED" layoutX="585.0" layoutY="39.0" onAction="#managementLogInBtnOnAction" prefHeight="52.0" prefWidth="244.0" text="Management Login" textFill="#f39c12" AnchorPane.rightAnchor="271.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="receptionistLogInBtn" buttonType="RAISED" layoutX="829.0" layoutY="39.0" onAction="#receptionistLogInBtnOnAction" prefHeight="52.0" prefWidth="244.0" text="Receptionist Login" textFill="#f39c12" AnchorPane.rightAnchor="27.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="335.0" layoutY="382.0" text="The Best Place To Buy Your Solar Products In Srilanka" textFill="#6f6131">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

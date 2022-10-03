@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="deleteProductFormContext" prefHeight="498.0" prefWidth="867.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerManagement.DeleteProductFormController">
+   <children>
+      <TextField fx:id="txtName" disable="true" layoutX="226.0" layoutY="175.0" prefHeight="31.0" prefWidth="570.0" />
+      <TextField fx:id="txtDescription" disable="true" layoutX="229.0" layoutY="240.0" prefHeight="62.0" prefWidth="570.0" />
+      <TextField fx:id="txtListPrice" disable="true" layoutX="231.0" layoutY="343.0" prefHeight="31.0" prefWidth="238.0" />
+      <TextField fx:id="txtDiscount" disable="true" layoutX="574.0" layoutY="343.0" prefHeight="31.0" prefWidth="230.0" />
+      <Label layoutX="156.0" layoutY="180.0" text="Name :" />
+      <Label layoutX="131.0" layoutY="250.0" text="Descriptio :" />
+      <Label layoutX="491.0" layoutY="348.0" text="Discount :" />
+      <Label layoutX="142.0" layoutY="348.0" text="List Price :" />
+      <Label layoutX="363.0" layoutY="16.0" text="Delete Product" textFill="#361890">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="64.0" layoutY="118.0" text="Search Product Code :" />
+      <TextField fx:id="txtProductCode" layoutX="229.0" layoutY="109.0" onAction="#searchProductOnAction" prefHeight="38.0" prefWidth="297.0" style="-fx-border-color: black;" />
+      <JFXButton buttonType="RAISED" layoutX="272.0" layoutY="431.0" onAction="#deleteProductOnAction" prefHeight="38.0" prefWidth="335.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

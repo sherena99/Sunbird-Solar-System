@@ -1,0 +1,56 @@
+.background{
+    -fx-background-image: url(../assest/b-5.jpg);
+}
+.icon{
+    -fx-background-image: url(../assest/I-2.png);
+}
+.dashboard{
+    -fx-background-image: url(../assest/Dash-2.png);
+}
+.report{
+    -fx-background-image: url(../assest/reports.jpeg);
+}
+.logIn{
+    -fx-background-image: url(../assest/2.jpg);
+}
+.logIn2{
+    -fx-background-image: url(../assest/4.jpg);
+}
+.dashBoard{
+    -fx-background-image: url(../assest/15.jpeg);
+}
+.signIn{
+    -fx-background-image: url(../assest/17.jpg);
+}
+.D1{
+    -fx-background-image: url(../assest/121.jpg);
+}
+
+
+/*Table Styles Start*/
+.table-view:focused{
+    -fx-background-insets: 0px;
+}
+
+.table-view .column-header{
+    -fx-size:40px;
+    -fx-background-color: #2980b9;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: white;
+}
+
+.table-view .table-row-cell:empty{
+    -fx-background-color: white;
+}
+.table-view .table-row-cell:selected{
+    -fx-background-color:linear-gradient(to right, rgba(119, 8, 245, 0.29), rgba(15, 93, 255, 0.39));
+}
+
+.table-view .table-row-cell:selected *{
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(54, 49, 49);
+}
+
+

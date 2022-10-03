@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="RSignInFormContext" prefHeight="400.0" prefWidth="600.0" styleClass="signIn" stylesheets="@../style/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RSignInFormController">
+   <children>
+      <Label layoutX="219.0" layoutY="35.0" text="Registration">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="519.0" layoutY="24.0" onAction="#cancelButtonOnAction" prefHeight="36.0" prefWidth="37.0" style="-fx-background-color: red; -fx-background-radius: 50;" text="X" textFill="#171717">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtUserName" layoutX="71.0" layoutY="167.0" prefHeight="36.0" prefWidth="439.0" promptText="User Name" />
+      <TextField fx:id="txtUserPassword" layoutX="71.0" layoutY="246.0" prefHeight="36.0" prefWidth="439.0" promptText="Password" />
+      <Label layoutX="73.0" layoutY="138.0" text="User Name:" />
+      <Label layoutX="71.0" layoutY="217.0" text="Password:" />
+      <JFXButton buttonType="RAISED" layoutX="178.0" layoutY="337.0" onAction="#RegisterButtonOnAction" prefHeight="42.0" prefWidth="265.0" style="-fx-background-color: #10ac84;" text="Register" textFill="#171717">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

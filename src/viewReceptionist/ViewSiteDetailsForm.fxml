@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="viewSiteFormContext" prefHeight="771.0" prefWidth="926.0" style="-fx-background-color: #ffeaa7; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerReceptionist.ViewSiteDetailsFormController">
+   <children>
+      <TableView fx:id="tblSite" layoutX="10.0" layoutY="90.0" prefHeight="669.0" prefWidth="903.0">
+        <columns>
+          <TableColumn fx:id="colDate" prefWidth="100.0" text="Date" />
+            <TableColumn fx:id="colIqId" prefWidth="75.0" text="Inq Id" />
+            <TableColumn fx:id="colAddress" prefWidth="142.0" text="Address" />
+            <TableColumn fx:id="colSiteType" prefWidth="105.0" text=" Site Type" />
+            <TableColumn fx:id="colRoof" prefWidth="102.0" text="Roof" />
+            <TableColumn fx:id="colDirection" prefWidth="90.0" text="Direction" />
+            <TableColumn fx:id="colExtraWork" prefWidth="122.0" text="Extra Work" />
+            <TableColumn fx:id="colCharge" prefWidth="89.0" text="Charge" />
+            <TableColumn fx:id="colNote" prefWidth="77.0" text="Note" />
+        </columns>
+      </TableView>
+      <Label layoutX="383.0" layoutY="10.0" text="View All Sites">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <Separator layoutX="11.0" layoutY="73.0" prefHeight="3.0" prefWidth="902.0" />
+      <JFXButton buttonType="RAISED" layoutX="835.0" layoutY="15.0" onAction="#cancelButtonOnAction" prefHeight="38.0" prefWidth="37.0" style="-fx-background-color: red; -fx-background-radius: 40;" text="X" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

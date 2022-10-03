@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageCustomerContext" prefHeight="771.0" prefWidth="926.0" style="-fx-background-color: white; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerReceptionist.ManageCustomerFormController">
+   <children>
+      <TextField fx:id="txtTitle" layoutX="44.0" layoutY="139.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="206.0" />
+      <Label layoutX="44.0" layoutY="110.0" text="Title" />
+      <TextField fx:id="txtAddress" layoutX="44.0" layoutY="199.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="837.0" />
+      <Label layoutX="44.0" layoutY="170.0" text="Customer Address :" />
+      <TextField fx:id="txtNic" layoutX="49.0" layoutY="260.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="393.0" />
+      <Label layoutX="49.0" layoutY="231.0" text="NIC :" />
+      <TextField fx:id="txtName" layoutX="274.0" layoutY="138.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="601.0" />
+      <Label layoutX="272.0" layoutY="110.0" text="Customer Name :" />
+      <TextField fx:id="txtMobile" layoutX="489.0" layoutY="259.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="393.0" />
+      <Label layoutX="489.0" layoutY="230.0" text="Mobile Number :" />
+      <TextField fx:id="txtEmail" layoutX="44.0" layoutY="322.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="837.0" />
+      <Label layoutX="44.0" layoutY="293.0" text="Email :" />
+      <TextField fx:id="textId" layoutX="148.0" layoutY="66.0" onAction="#searchCustomerOnAction" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="287.0" style="-fx-border-color: black;" />
+      <Label layoutX="44.0" layoutY="71.0" text="Customer Id :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="updateCustomerBtn" buttonType="RAISED" layoutX="661.0" layoutY="378.0" onAction="#updateCustomerOnAction" prefHeight="37.0" prefWidth="221.0" style="-fx-background-color: #1e90ff;" text="Update" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="395.0" layoutY="4.0" text="Manage Customers">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCustomer" layoutX="5.0" layoutY="440.0" prefHeight="310.0" prefWidth="917.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="106.0" text="Id" />
+          <TableColumn fx:id="colTitle" prefWidth="64.0" text="Title" />
+            <TableColumn fx:id="colName" prefWidth="169.0" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="175.0" text="Address" />
+            <TableColumn fx:id="colNic" prefWidth="138.0" text="NIC" />
+            <TableColumn fx:id="colMobile" prefWidth="124.0" text="Mobile" />
+            <TableColumn fx:id="colEmail" prefWidth="140.0" text="Email" />
+        </columns>
+      </TableView>
+      <Separator layoutX="14.0" layoutY="426.0" prefHeight="5.0" prefWidth="905.0" />
+      <JFXButton buttonType="RAISED" layoutX="838.0" layoutY="18.0" onAction="#cancelButtonOnAction" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: red; -fx-background-radius: 70;" text="X" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

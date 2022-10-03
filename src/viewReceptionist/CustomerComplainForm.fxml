@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CustomerComplainFormContext" prefHeight="771.0" prefWidth="926.0" style="-fx-background-color: white; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerReceptionist.CustomerComplainFormController">
+   <children>
+      <Label layoutX="286.0" layoutY="14.0" text="Customer Complain Form">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="160.0" text="Inquiry Code :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="369.0" layoutY="161.0" text="Customer Name : ">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustomerName" layoutX="505.0" layoutY="158.0" prefHeight="31.0" prefWidth="405.0" />
+      <Label layoutX="27.0" layoutY="631.0" text="Complain Handle Officer :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="306.0" text="Compalin About :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtComplainAbout" layoutX="177.0" layoutY="303.0" prefHeight="31.0" prefWidth="723.0" />
+      <Label layoutX="27.0" layoutY="360.0" text="Complain Details :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtComplainDetails" layoutX="27.0" layoutY="401.0" prefHeight="200.0" prefWidth="873.0" />
+      <JFXButton fx:id="btnSaveComplainOnAction" buttonType="RAISED" layoutX="313.0" layoutY="698.0" onAction="#btnSaveComplainOnAction" prefHeight="39.0" prefWidth="361.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 30;" text="Save Complain">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Separator layoutX="15.0" layoutY="279.0" prefHeight="3.0" prefWidth="895.0" />
+      <Label layoutX="41.0" layoutY="225.0" text="Assigned CRO :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="92.0" text="Complain Number :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblComplainNum" layoutX="202.0" layoutY="92.0" text="Com-001">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCroCode" layoutX="162.0" layoutY="223.0" prefHeight="31.0" prefWidth="396.0" />
+      <Label layoutX="348.0" layoutY="92.0" text="Complain date :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="479.0" layoutY="92.0" text="2020/02/20">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="658.0" layoutY="92.0" text="Complain Time :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="798.0" layoutY="92.0" text="00.00.00">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtComplainHandleOfficer" layoutX="231.0" layoutY="629.0" prefHeight="31.0" prefWidth="396.0" />
+      <ComboBox fx:id="cmbInquiryCode" layoutX="156.0" layoutY="159.0" prefHeight="31.0" prefWidth="193.0" />
+   </children>
+</AnchorPane>

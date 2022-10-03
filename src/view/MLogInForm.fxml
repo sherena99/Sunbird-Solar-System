@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mLogInFormContext" prefHeight="755.0" prefWidth="642.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MLogInFormController">
+   <children>
+      <JFXButton fx:id="logInBtn" buttonType="RAISED" layoutX="132.0" layoutY="684.0" onAction="#logInOnAction" prefHeight="44.0" prefWidth="398.0" style="-fx-background-color: #40739e; -fx-background-radius: 40;" text="Login" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#69a0c3" />
+                  <Stop color="#aca4ee" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <AnchorPane layoutY="1.0" prefHeight="472.0" prefWidth="642.0" styleClass="logIn" stylesheets="@../style/style.css">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="581.0" layoutY="43.0" onAction="#cancelButtonOnAction" prefHeight="33.0" prefWidth="36.0" style="-fx-background-color: red; -fx-background-radius: 50;" text="X" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="txtUserName" layoutX="166.0" layoutY="554.0" prefHeight="33.0" prefWidth="356.0" promptText="Enter User Name.." style="-fx-border-color: #718093;" unFocusColor="#1300e8" />
+      <JFXTextField fx:id="txtPassword" labelFloat="true" layoutX="166.0" layoutY="609.0" prefHeight="33.0" prefWidth="356.0" promptText="EnterPassword" style="-fx-border-color: #718093;" unFocusColor="#0400ff" />
+      <Label layoutX="232.0" layoutY="493.0" text="Management Login">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="302.0" layoutY="449.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icons8-drop-down-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="124.0" layoutY="554.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icons8-male-user-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="124.0" layoutY="609.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/icons8-password-60.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

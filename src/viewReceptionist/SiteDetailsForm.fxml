@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="siteDetailsFormContext" prefHeight="771.0" prefWidth="926.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerReceptionist.SiteDetailsFormController">
+   <children>
+      <Label layoutX="395.0" layoutY="9.0" prefHeight="45.0" prefWidth="174.0" text="Site Details">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="35.0" layoutY="134.0" prefHeight="615.0" prefWidth="857.0" style="-fx-border-color: black; -fx-border-radius: 30;">
+         <children>
+            <Label layoutX="29.0" layoutY="30.0" text="Enter Inq Id :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="149.0" text="Site Type :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="486.0" layoutY="149.0" text="Roof :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="218.0" text="Direction :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="285.0" text="Extra Work :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="456.0" layoutY="285.0" text=" Charges :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCharges" layoutX="539.0" layoutY="283.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="268.0" />
+            <TextArea fx:id="txtNotes" layoutX="45.0" layoutY="385.0" onKeyReleased="#textFields_Key_Released" prefHeight="63.0" prefWidth="782.0" />
+            <Label layoutX="38.0" layoutY="341.0" text="Note :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnSaveSiteOnAction" buttonType="RAISED" layoutX="260.0" layoutY="550.0" onAction="#btnSaveSiteOnAction" prefHeight="39.0" prefWidth="361.0" style="-fx-background-color: #2ecc71; -fx-background-radius: 30;" text="Save Details">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="37.0" layoutY="90.0" text="Address :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtAddress" disable="true" layoutX="136.0" layoutY="88.0" prefHeight="31.0" prefWidth="670.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtInquiryCode" layoutX="139.0" layoutY="26.0" onAction="#SearchInquiry" onKeyReleased="#textFields_Key_Released" prefHeight="33.0" prefWidth="301.0" style="-fx-border-color: black;" />
+            <Label layoutX="467.0" layoutY="30.0" text="date :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="541.0" layoutY="30.0" text="2020/02/20">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="655.0" layoutY="30.0" text=" Time :">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="723.0" layoutY="30.0" text="00.00.00">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cmbSiteType" layoutX="139.0" layoutY="147.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="301.0" />
+            <ComboBox fx:id="cmbRoof" layoutX="538.0" layoutY="147.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="268.0" />
+            <ComboBox fx:id="cmbDirection" layoutX="139.0" layoutY="216.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="301.0" />
+            <ComboBox fx:id="cmbExtraWork" layoutX="139.0" layoutY="283.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="301.0" />
+            <Label layoutX="38.0" layoutY="486.0" text="Status :">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtStatus" layoutX="126.0" layoutY="483.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="268.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <Label layoutX="405.0" layoutY="487.0" text="Change Status As ' Success ' Before Save Site Details">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="268.0" layoutY="50.0" text="Add Site Details After Inspection Of Inquiry Site Address " textFill="#c90707c4">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="731.0" layoutY="79.0" onAction="#btnEditSiteDetails" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: #70a1ff;" text="         Edit Site Details">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="28.0" layoutY="79.0" onAction="#btnViewAllSites" prefHeight="39.0" prefWidth="161.0" style="-fx-background-color: #eccc68;" text="         View All Sites">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="39.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/View-1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="738.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/Update-1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

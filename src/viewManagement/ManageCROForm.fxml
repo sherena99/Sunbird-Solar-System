@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="manageCroFormContext" prefHeight="771.0" prefWidth="926.0" style="-fx-border-color: black; -fx-background-color: #f1f2f6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerManagement.ManageCROFormController">
+   <children>
+      <Label layoutX="386.0" layoutY="14.0" text="Manage CRO">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="595.0" layoutY="85.0" onAction="#deleteCroOnAction" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #ced6e0; -fx-background-radius: 20;" text="       Delete CRO">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="377.0" layoutY="85.0" onAction="#updateCroOnAction" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #ced6e0; -fx-background-radius: 20;" text="          Update CRO">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="163.0" layoutY="86.0" onAction="#addNewCroOnAction" prefHeight="38.0" prefWidth="176.0" style="-fx-background-color: #ced6e0; -fx-background-radius: 20;" text="          Add New CRO">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="32.0" fitWidth="29.0" layoutX="170.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/Acc-2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="612.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/Delete-1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="394.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assest/Update-1.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="11.0" layoutY="142.0" prefHeight="3.0" prefWidth="903.0" />
+      <AnchorPane fx:id="manageCroInsideFormContext" layoutX="30.0" layoutY="185.0" prefHeight="507.0" prefWidth="867.0">
+         <children>
+            <TableView fx:id="tblCro" layoutY="-2.0" prefHeight="507.0" prefWidth="867.0">
+               <columns>
+                  <TableColumn fx:id="colId" prefWidth="96.0" text="Id" />
+                  <TableColumn fx:id="colName" prefWidth="111.0" text="Name" />
+                  <TableColumn fx:id="colAddress" prefWidth="184.0" text="Address" />
+                  <TableColumn fx:id="colMobile" prefWidth="158.0" text="Mobile" />
+                  <TableColumn fx:id="colCode" prefWidth="171.0" text="Code" />
+                  <TableColumn fx:id="colSalary" prefWidth="146.0" text="Salary" />
+               </columns>
+            </TableView>
+         </children></AnchorPane>
+      <Button layoutX="797.0" layoutY="19.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="31.0" prefWidth="66.0" style="-fx-background-color: red;" text="Cancel" textFill="WHITE" />
+   </children>
+</AnchorPane>

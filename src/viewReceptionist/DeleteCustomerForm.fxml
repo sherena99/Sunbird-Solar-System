@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="deleteCustomerFormContext" prefHeight="771.0" prefWidth="926.0" style="-fx-border-color: black; -fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerReceptionist.DeleteCustomerFormController">
+   <children>
+      <Label layoutX="334.0" layoutY="26.0" text="Customer Delete Form">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtTitle" disable="true" layoutX="45.0" layoutY="240.0" prefHeight="31.0" prefWidth="198.0" />
+      <Label layoutX="45.0" layoutY="211.0" text="Title" />
+      <TextField fx:id="txtAddress" disable="true" layoutX="45.0" layoutY="321.0" prefHeight="51.0" prefWidth="837.0" />
+      <Label layoutX="45.0" layoutY="296.0" prefHeight="21.0" prefWidth="131.0" text="Customer Address :" />
+      <TextField fx:id="txtNic" disable="true" layoutX="47.0" layoutY="416.0" prefHeight="31.0" prefWidth="393.0" />
+      <Label layoutX="47.0" layoutY="387.0" text="NIC :" />
+      <TextField fx:id="txtName" disable="true" layoutX="270.0" layoutY="239.0" prefHeight="31.0" prefWidth="606.0" />
+      <Label layoutX="273.0" layoutY="211.0" text="Customer Name :" />
+      <TextField fx:id="txtMobile" disable="true" layoutX="487.0" layoutY="415.0" prefHeight="31.0" prefWidth="393.0" />
+      <Label layoutX="487.0" layoutY="386.0" text="Mobile Number :" />
+      <TextField fx:id="txtEmail" disable="true" layoutX="45.0" layoutY="498.0" prefHeight="31.0" prefWidth="837.0" />
+      <Label layoutX="45.0" layoutY="469.0" text="Email :" />
+      <JFXButton buttonType="RAISED" layoutX="353.0" layoutY="613.0" onAction="#deleteCustomerOnAction" prefHeight="51.0" prefWidth="295.0" style="-fx-background-color: red;" text="Delete" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="833.0" layoutY="31.0" onAction="#cancelButtonOnAction" prefHeight="32.0" prefWidth="43.0" style="-fx-background-color: red; -fx-background-radius: 70;" text="X" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="textId" layoutX="152.0" layoutY="136.0" onAction="#searchCustomerOnAction" prefHeight="31.0" prefWidth="287.0" style="-fx-border-color: black;" />
+      <Label layoutX="48.0" layoutY="141.0" text="Customer Id :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

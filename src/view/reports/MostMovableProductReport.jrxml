@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="MostMovableProductReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="02975375-0a30-4633-8c7a-e9150dd42640">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="SunBird Connection"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select productCode, sum(inquiryQty) as inquiryQty from InquiryDetails group by productCode order by inquiryQty desc]]>
+	</queryString>
+	<field name="productCode" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="productCode"/>
+		<property name="com.jaspersoft.studio.field.label" value="productCode"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="inquirydetails"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="inquiryQty" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="inquiryQty"/>
+		<property name="com.jaspersoft.studio.field.label" value="inquiryQty"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="89" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="30" uuid="0c4bf904-d3ef-4d91-830f-d1bdd63362e5"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SUNBIRD Super Solar Hotwater Systems]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="29" width="555" height="30" uuid="a952dd0a-934b-4ec1-a7dc-f3d444524a2d"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Jude Fernandopulle Associates]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="59" width="555" height="30" forecolor="#161DA8" uuid="471d4e7c-14ef-43ad-9c77-3df571876dc9"/>
+				<textElement textAlignment="Center">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Most Movable Item]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="278" height="30" uuid="188e1818-75d5-4145-b0e4-cecdff86e855">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="818f6e65-aef1-4c78-91e9-4fa225195a22"/>
+				</reportElement>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="0" width="277" height="30" uuid="9373338d-9df9-465d-bbbd-ab99842bdfbe">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2b564c8a-c385-42e4-8dbe-90650c23290d"/>
+				</reportElement>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[QTY]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="278" height="30" uuid="7da29006-0a62-4940-a4ed-b3524289c608">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="818f6e65-aef1-4c78-91e9-4fa225195a22"/>
+				</reportElement>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{productCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="278" y="0" width="277" height="30" uuid="82abe0dc-adbd-47a3-92d3-a4a318b66c57">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2b564c8a-c385-42e4-8dbe-90650c23290d"/>
+				</reportElement>
+				<box leftPadding="6">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inquiryQty}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="416" splitType="Stretch">
+			<pieChart>
+				<chart evaluationTime="Report">
+					<reportElement x="150" y="20" width="258" height="160" uuid="b6956dcf-e240-465d-8612-caeb422b2f59"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<pieDataset>
+					<dataset resetType="Report"/>
+					<keyExpression><![CDATA[$F{productCode}]]></keyExpression>
+					<valueExpression><![CDATA[$F{inquiryQty}]]></valueExpression>
+					<labelExpression><![CDATA[$F{productCode}]]></labelExpression>
+				</pieDataset>
+				<piePlot>
+					<plot/>
+					<itemLabel/>
+				</piePlot>
+			</pieChart>
+			<barChart>
+				<chart evaluationTime="Report">
+					<reportElement x="34" y="190" width="490" height="226" uuid="cabadc92-905b-49be-b208-e0d761c40c17"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset resetType="Report"/>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{productCode}]]></seriesExpression>
+						<categoryExpression><![CDATA[0]]></categoryExpression>
+						<valueExpression><![CDATA[$F{inquiryQty}]]></valueExpression>
+						<labelExpression><![CDATA[$F{productCode}]]></labelExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat labelColor="#000000" tickLabelColor="#000000" axisLineColor="#000000"/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
+		</band>
+	</summary>
+</jasperReport>

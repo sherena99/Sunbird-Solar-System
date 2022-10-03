@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="editSiteFormContext" prefHeight="771.0" prefWidth="926.0" style="-fx-background-color: #dff9fb; -fx-border-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerReceptionist.EditSiteDetailsFormController">
+   <children>
+      <Label layoutX="78.0" layoutY="162.0" text="Enter Inq Id :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="281.0" text="Site Type :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="525.0" layoutY="280.0" text="Roof :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="350.0" text="Direction :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="86.0" layoutY="417.0" text="Extra Work :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="505.0" layoutY="417.0" text=" Charges :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCharges" layoutX="588.0" layoutY="415.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="268.0" />
+      <TextArea fx:id="txtNotes" layoutX="94.0" layoutY="517.0" prefHeight="70.0" prefWidth="782.0" />
+      <Label layoutX="87.0" layoutY="473.0" text="Note :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnSaveSiteOnAction" buttonType="RAISED" layoutX="319.0" layoutY="664.0" onAction="#updateSiteBtnOnAction" prefHeight="39.0" prefWidth="361.0" style="-fx-background-color: #e17055; -fx-background-radius: 30;" text="Update" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="86.0" layoutY="222.0" text="Address :">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAddress" disable="true" layoutX="176.0" layoutY="220.0" prefHeight="31.0" prefWidth="679.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtInquiryCode" layoutX="188.0" layoutY="158.0" onAction="#SearchInquiry" onKeyReleased="#textFields_Key_Released" prefHeight="33.0" prefWidth="301.0" style="-fx-border-color: black;" />
+      <Label layoutX="516.0" layoutY="162.0" text="date :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="590.0" layoutY="162.0" text="0000/00/00">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="704.0" layoutY="162.0" text=" Time :">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="772.0" layoutY="162.0" text="00.00.00">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="374.0" layoutY="24.0" text="Edit Site Details">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="845.0" layoutY="25.0" onAction="#cancelButtonOnAction" prefHeight="38.0" prefWidth="37.0" style="-fx-background-color: red; -fx-background-radius: 40;" text="X" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtRoof" layoutX="588.0" layoutY="279.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="268.0" />
+      <TextField fx:id="txtSiteType" layoutX="188.0" layoutY="278.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="268.0" />
+      <TextField fx:id="txtDirection" layoutX="188.0" layoutY="348.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="268.0" />
+      <TextField fx:id="txtExtraWork" layoutX="188.0" layoutY="415.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="268.0" />
+   </children>
+</AnchorPane>

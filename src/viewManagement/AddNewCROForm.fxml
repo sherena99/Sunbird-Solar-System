@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addNewCustomerFormContext" prefHeight="498.0" prefWidth="867.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllerManagement.AddNewCROFormController">
+   <children>
+      <Label layoutX="127.0" layoutY="61.0" text="CRO Id :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCroId" layoutX="213.0" layoutY="61.0" text="CRO-001">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="207.0" layoutY="116.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="554.0" />
+      <TextField fx:id="txtAddress" layoutX="210.0" layoutY="186.0" onKeyReleased="#textFields_Key_Released" prefHeight="62.0" prefWidth="554.0" />
+      <TextField fx:id="txtMobileNum" layoutX="212.0" layoutY="289.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="238.0" />
+      <TextField fx:id="txtSalary" layoutX="555.0" layoutY="289.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="223.0" />
+      <Label layoutX="115.0" layoutY="121.0" text="CRO Name :" />
+      <Label layoutX="104.0" layoutY="196.0" text="CRO Address :" />
+      <Label layoutX="126.0" layoutY="361.0" text="CRO Code :" />
+      <Label layoutX="494.0" layoutY="294.0" text="Salary :" />
+      <JFXButton fx:id="saveCroBtn" buttonType="RAISED" layoutX="301.0" layoutY="424.0" onAction="#saveDataOnAction" prefHeight="39.0" prefWidth="318.0" style="-fx-background-color: #2ed573;" text="Save">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TextField fx:id="txtCode" layoutX="212.0" layoutY="356.0" onKeyReleased="#textFields_Key_Released" prefHeight="31.0" prefWidth="554.0" />
+      <Label layoutX="109.0" layoutY="294.0" text="Mobile Num :" />
+      <Label layoutX="383.0" layoutY="14.0" text="Add New CRO" textFill="#361890">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
